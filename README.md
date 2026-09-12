@@ -1,8 +1,11 @@
 # H9 Remote
+<img width="678" height="710" alt="icon_app" src="https://github.com/user-attachments/assets/df35b754-b0df-4e5b-b0e0-f70319db4419" />
+
 
 A macOS/iOS remote control application and AUv3 MIDI FX plugin for the Eventide H9 guitar effects pedal. Control your H9 presets, algorithms, parameters, and settings from your computer or DAW.
 
 ## Screenshots
+<img width="1066" height="908" alt="open_menu" src="https://github.com/user-attachments/assets/38d65c2d-7aa5-409d-951a-b2ec38296f5f" />
 
 
 ## Features
