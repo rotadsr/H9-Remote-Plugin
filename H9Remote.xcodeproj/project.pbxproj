@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D918A734E8EB134952DA97F /* H9StandaloneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B4E4446EFEB9EC299EA425 /* H9StandaloneViewModel.swift */; };
+		47D5C64B33086984950E97F1 /* H9MIDIConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5044C543251CD57ED78B3D /* H9MIDIConnection.swift */; };
+		705FE254E62D5CFF591AB300 /* H9RemoteCore in Frameworks */ = {isa = PBXBuildFile; productRef = 5040E2828D62D2B05E8CFD7D /* H9RemoteCore */; };
+		774370679FC6A1B07474906B /* H9RemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DF56A45447C76CEAE1AA35 /* H9RemoteApp.swift */; };
+		7E15DAA1980A432E45526149 /* H9RemoteCore in Frameworks */ = {isa = PBXBuildFile; productRef = 47A78ACDAE4A04B48075B687 /* H9RemoteCore */; };
+		9C5AE2A58A6DF1205CF2A3C8 /* H9AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE420D9A9021F1D5D8DBC950 /* H9AudioUnitViewController.swift */; };
+		D68A4DC1B8C523B5C146CDC5 /* H9ParameterTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD7B93DFFFBC5A13E27F7B9 /* H9ParameterTree.swift */; };
+		E0F3AE6AC65ED6382106B605 /* H9AudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E693A8CC535BC3D7B7752089 /* H9AudioUnit.swift */; };
+		EE215713F95747CBF6B7C397 /* H9RemoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71C844294AC0AA81259D2EC /* H9RemoteView.swift */; };
+		F6360C243557024CC5E1A9BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0D5414E87ACC179E239BB2 /* Assets.xcassets */; };
+		F8257B223BBF6BBFF8DEE3E6 /* H9RemoteExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C7CC8356F368480E239FD935 /* H9RemoteExtension.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FDEA3A629ED7E1F472D397E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5294B32AE2523516638EFB31 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79BF51D30E4C5B4E4F4DBB2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03D91204491FCDFC5AB610FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7A45B6A823C75814A6689C0;
+			remoteInfo = H9RemoteExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9C470B877256DFFD75008A57 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F8257B223BBF6BBFF8DEE3E6 /* H9RemoteExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3C0D5414E87ACC179E239BB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5294B32AE2523516638EFB31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5E166C1630EF8E0A41B15038 /* H9Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H9Remote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E587F093D57EC02E249615D /* H9RemoteCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = H9RemoteCore; path = H9RemoteCore; sourceTree = SOURCE_ROOT; };
+		87B4E4446EFEB9EC299EA425 /* H9StandaloneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H9StandaloneViewModel.swift; sourceTree = "<group>"; };
+		8867675C4759784B5C90845E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		98AF0A30DFFE94BD78D60CF6 /* H9RemoteExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = H9RemoteExtension.entitlements; sourceTree = "<group>"; };
+		ADD7B93DFFFBC5A13E27F7B9 /* H9ParameterTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H9ParameterTree.swift; sourceTree = "<group>"; };
+		AE420D9A9021F1D5D8DBC950 /* H9AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H9AudioUnitViewController.swift; sourceTree = "<group>"; };
+		AE819F791606C4B1546FAA63 /* H9Remote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = H9Remote.entitlements; sourceTree = "<group>"; };
+		B5DF56A45447C76CEAE1AA35 /* H9RemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H9RemoteApp.swift; sourceTree = "<group>"; };
+		B71C844294AC0AA81259D2EC /* H9RemoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H9RemoteView.swift; sourceTree = "<group>"; };
+		C7CC8356F368480E239FD935 /* H9RemoteExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = H9RemoteExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E693A8CC535BC3D7B7752089 /* H9AudioUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H9AudioUnit.swift; sourceTree = "<group>"; };
+		EB5044C543251CD57ED78B3D /* H9MIDIConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = H9MIDIConnection.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BEDE5719B4097A152F19A5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				705FE254E62D5CFF591AB300 /* H9RemoteCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A98AA84AD790EFCADB3C06E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E15DAA1980A432E45526149 /* H9RemoteCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C07F4D9F4549ACEE366629E /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				7E587F093D57EC02E249615D /* H9RemoteCore */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		34C6DFE1BE72F74DC465D7B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5E166C1630EF8E0A41B15038 /* H9Remote.app */,
+				C7CC8356F368480E239FD935 /* H9RemoteExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B2362AEE423CC5C317177571 /* H9Remote */ = {
+			isa = PBXGroup;
+			children = (
+				3C0D5414E87ACC179E239BB2 /* Assets.xcassets */,
+				5294B32AE2523516638EFB31 /* ContentView.swift */,
+				EB5044C543251CD57ED78B3D /* H9MIDIConnection.swift */,
+				AE819F791606C4B1546FAA63 /* H9Remote.entitlements */,
+				B5DF56A45447C76CEAE1AA35 /* H9RemoteApp.swift */,
+				87B4E4446EFEB9EC299EA425 /* H9StandaloneViewModel.swift */,
+			);
+			path = H9Remote;
+			sourceTree = "<group>";
+		};
+		D18CC7D49E2E9E123124AA14 /* H9RemoteExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E693A8CC535BC3D7B7752089 /* H9AudioUnit.swift */,
+				AE420D9A9021F1D5D8DBC950 /* H9AudioUnitViewController.swift */,
+				ADD7B93DFFFBC5A13E27F7B9 /* H9ParameterTree.swift */,
+				98AF0A30DFFE94BD78D60CF6 /* H9RemoteExtension.entitlements */,
+				B71C844294AC0AA81259D2EC /* H9RemoteView.swift */,
+				8867675C4759784B5C90845E /* Info.plist */,
+			);
+			path = H9RemoteExtension;
+			sourceTree = "<group>";
+		};
+		EAFF654E7E997BADE59851B3 = {
+			isa = PBXGroup;
+			children = (
+				B2362AEE423CC5C317177571 /* H9Remote */,
+				D18CC7D49E2E9E123124AA14 /* H9RemoteExtension */,
+				2C07F4D9F4549ACEE366629E /* Packages */,
+				34C6DFE1BE72F74DC465D7B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D44224F4ACF6E4219FA5140 /* H9Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E8AE107AC0B287FE1B5B70F /* Build configuration list for PBXNativeTarget "H9Remote" */;
+			buildPhases = (
+				863FB4C4C41ABBA156024FD8 /* Sources */,
+				82E04D03DF8BA2A6A507C7AA /* Resources */,
+				3BEDE5719B4097A152F19A5B /* Frameworks */,
+				9C470B877256DFFD75008A57 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6ADD5BB7C112EABD72BB6C82 /* PBXTargetDependency */,
+			);
+			name = H9Remote;
+			packageProductDependencies = (
+				5040E2828D62D2B05E8CFD7D /* H9RemoteCore */,
+			);
+			productName = H9Remote;
+			productReference = 5E166C1630EF8E0A41B15038 /* H9Remote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7A45B6A823C75814A6689C0 /* H9RemoteExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35610B9A7340362499EB5A0B /* Build configuration list for PBXNativeTarget "H9RemoteExtension" */;
+			buildPhases = (
+				DB82E18C594DD7D00D966E18 /* Sources */,
+				A98AA84AD790EFCADB3C06E7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = H9RemoteExtension;
+			packageProductDependencies = (
+				47A78ACDAE4A04B48075B687 /* H9RemoteCore */,
+			);
+			productName = H9RemoteExtension;
+			productReference = C7CC8356F368480E239FD935 /* H9RemoteExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03D91204491FCDFC5AB610FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 5E4C3B316C3000593133061A /* Build configuration list for PBXProject "H9Remote" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = EAFF654E7E997BADE59851B3;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				788E40C38ADD4920B58E9B29 /* XCLocalSwiftPackageReference "H9RemoteCore" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 34C6DFE1BE72F74DC465D7B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D44224F4ACF6E4219FA5140 /* H9Remote */,
+				D7A45B6A823C75814A6689C0 /* H9RemoteExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82E04D03DF8BA2A6A507C7AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6360C243557024CC5E1A9BB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		863FB4C4C41ABBA156024FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDEA3A629ED7E1F472D397E7 /* ContentView.swift in Sources */,
+				47D5C64B33086984950E97F1 /* H9MIDIConnection.swift in Sources */,
+				774370679FC6A1B07474906B /* H9RemoteApp.swift in Sources */,
+				1D918A734E8EB134952DA97F /* H9StandaloneViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB82E18C594DD7D00D966E18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F3AE6AC65ED6382106B605 /* H9AudioUnit.swift in Sources */,
+				9C5AE2A58A6DF1205CF2A3C8 /* H9AudioUnitViewController.swift in Sources */,
+				D68A4DC1B8C523B5C146CDC5 /* H9ParameterTree.swift in Sources */,
+				EE215713F95747CBF6B7C397 /* H9RemoteView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6ADD5BB7C112EABD72BB6C82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7A45B6A823C75814A6689C0 /* H9RemoteExtension */;
+			targetProxy = 79BF51D30E4C5B4E4F4DBB2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22E6817F36677318032060DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = H9Remote/H9Remote.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.h9au.H9Remote;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		73301719BB277712AE4D5BC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = H9RemoteExtension/H9RemoteExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = H9RemoteExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.h9au.H9Remote.H9RemoteExtension;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		736F6DCF61A6D6BBEBA81E4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		73C742F3627BC654185CC502 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = H9RemoteExtension/H9RemoteExtension.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = H9RemoteExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.h9au.H9Remote.H9RemoteExtension;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A12C1B62EFB847B7A301F727 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C7FF72251A34DFD32D0C9DB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = H9Remote/H9Remote.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.h9au.H9Remote;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E8AE107AC0B287FE1B5B70F /* Build configuration list for PBXNativeTarget "H9Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E6817F36677318032060DF /* Debug */,
+				C7FF72251A34DFD32D0C9DB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		35610B9A7340362499EB5A0B /* Build configuration list for PBXNativeTarget "H9RemoteExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73301719BB277712AE4D5BC3 /* Debug */,
+				73C742F3627BC654185CC502 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5E4C3B316C3000593133061A /* Build configuration list for PBXProject "H9Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				736F6DCF61A6D6BBEBA81E4B /* Debug */,
+				A12C1B62EFB847B7A301F727 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		788E40C38ADD4920B58E9B29 /* XCLocalSwiftPackageReference "H9RemoteCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = H9RemoteCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47A78ACDAE4A04B48075B687 /* H9RemoteCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = H9RemoteCore;
+		};
+		5040E2828D62D2B05E8CFD7D /* H9RemoteCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = H9RemoteCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 03D91204491FCDFC5AB610FB /* Project object */;
+}
